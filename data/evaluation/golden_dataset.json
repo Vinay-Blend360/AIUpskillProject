@@ -1,0 +1,87 @@
+{
+  "description": "Golden dataset for evaluating NewsFilterAgent's AI/ML relevance judgments.",
+  "version": "1.0",
+  "created": "2026-11-15",
+  "test_cases": [
+    {
+      "id": 1,
+      "title": "OpenAI releases GPT-5 with major reasoning improvements",
+      "summary": "The new model shows significant gains on math and coding benchmarks compared to GPT-4.",
+      "expected_relevant": true,
+      "expected_score": 9,
+      "reason": "Clear, major LLM release."
+    },
+    {
+      "id": 2,
+      "title": "New transformer architecture cuts inference cost by 40%",
+      "summary": "Researchers propose a sparse attention mechanism that reduces compute for long-context models.",
+      "expected_relevant": true,
+      "expected_score": 8,
+      "reason": "AI research with concrete technical contribution."
+    },
+    {
+      "id": 3,
+      "title": "Stable Diffusion 4 adds video generation",
+      "summary": "The latest release extends the diffusion model family to short video clips.",
+      "expected_relevant": true,
+      "expected_score": 8,
+      "reason": "Generative AI model release."
+    },
+    {
+      "id": 4,
+      "title": "Study: large language models show emergent planning behavior",
+      "summary": "A new paper analyzes multi-step planning capabilities in frontier LLMs.",
+      "expected_relevant": true,
+      "expected_score": 7,
+      "reason": "AI research/safety relevant topic."
+    },
+    {
+      "id": 5,
+      "title": "AI safety researchers propose new alignment benchmark",
+      "summary": "The benchmark evaluates whether models follow instructions under adversarial prompting.",
+      "expected_relevant": true,
+      "expected_score": 7,
+      "reason": "AI safety, directly relevant."
+    },
+    {
+      "id": 6,
+      "title": "New JavaScript framework promises faster builds",
+      "summary": "A startup released a build tool that claims 2x faster bundling than Vite.",
+      "expected_relevant": false,
+      "expected_score": 1,
+      "reason": "Web tooling, unrelated to AI/ML."
+    },
+    {
+      "id": 7,
+      "title": "City council approves new bike lane funding",
+      "summary": "Local government allocated funds for bike infrastructure in the downtown area.",
+      "expected_relevant": false,
+      "expected_score": 0,
+      "reason": "Completely unrelated to AI/ML."
+    },
+    {
+      "id": 8,
+      "title": "Popular coffee chain launches loyalty app redesign",
+      "summary": "The app now includes a redesigned rewards tracker and mobile ordering.",
+      "expected_relevant": false,
+      "expected_score": 1,
+      "reason": "Consumer app news, unrelated to AI/ML."
+    },
+    {
+      "id": 9,
+      "title": "Startup uses machine learning to optimize warehouse routing",
+      "summary": "The logistics company says its ML model cut delivery times by 15%, though AI is a minor part of a broader product.",
+      "expected_relevant": true,
+      "expected_score": 6,
+      "reason": "Borderline: ML-driven but mostly a logistics/business story."
+    },
+    {
+      "id": 10,
+      "title": "Smartphone maker adds 'AI' branding to camera app update",
+      "summary": "The update adds a few auto-enhance filters marketed as AI-powered photo editing.",
+      "expected_relevant": false,
+      "expected_score": 3,
+      "reason": "Borderline: AI-washing marketing rather than substantive AI/ML news."
+    }
+  ]
+}
